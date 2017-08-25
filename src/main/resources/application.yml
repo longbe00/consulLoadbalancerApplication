@@ -1,0 +1,41 @@
+server:
+  port: 8082
+spring:
+  consul:
+    agent: 
+        host: "13.124.140.213"
+        port: 8500
+
+
+ribbon:
+  ServerListRefreshInterval: 1000
+
+endpoints:
+  health:
+    sensitive: false
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+
+management:
+  security:
+    enabled: false
+
+logging:
+  level:
+    org.springframework.cloud.consul: DEBUG
+    
+redis:
+  server:
+    url: "13.124.140.213"
+    port: 6379
+    password: "dbfrhrfh1rk!"
+    timeout: 5000
+  pool:
+    config:
+      test-while-idle: true
+      min-evictable-idle-time-millis: 60000
+      time-between-eviction-runs-millis: 30000
+      num-tests-per-eviction-run: -1
+      pool-no-use: false
