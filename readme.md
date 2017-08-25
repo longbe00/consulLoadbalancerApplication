@@ -37,21 +37,9 @@ Spring cloud 사용 dependency 추가
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-zuul</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 ```
-mvn install
-```
- ## Building & Install
-```ㅏㅏㅏ
-mvn archetype:generate                                  \
-  -DarchetypeGroupId=com.mikefree
-  -DarchetypeArtifactId=rest-api-archetype            \
-  -DarchetypeVersion=1.0.0                \
-  -DgroupId=<my.groupid>                                \
-  -DartifactId=<my-artifactId>
- ```
